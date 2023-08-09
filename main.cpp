@@ -1,6 +1,6 @@
 #include "DxLib.h"
 #include "SceneManager.h"
-#include "GamaMainScene.h"
+#include "GameMainScene.h"
 
 /***********************************************
  * プログラムの開始
@@ -16,10 +16,6 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
 	if (DxLib_Init() == -1) return -1;	// DXライブラリの初期化処理
 
 	SetDrawScreen(DX_SCREEN_BACK);	// 描画先画面を裏にする
-
-
-	
-
 
 	//シーンマネージャーオブジェクトの作成
 	SceneManager sceneMng(dynamic_cast<AbstractScene*>(new GameMainScene()));
