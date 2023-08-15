@@ -7,6 +7,8 @@ AbstractScene* SceneManager::Update()
 	//現在のシーンのアップデートを実行
 	
 	mScene->Update();
+
+	return mScene;
 }
 
 //描画処理のみを行う関数
